@@ -1,0 +1,287 @@
+.scholarly-file {
+  --paper: #d8c9aa;
+  --paper-light: #efe5cf;
+  --paper-dark: #bca77f;
+  --scholar-green: #293b35;
+  --scholar-gold: #8c6e38;
+  --serif: "Literata", Georgia, "Times New Roman", serif;
+}
+
+.scholarly-file body,
+.scholarly-file .article-paper {
+  font-family: var(--serif);
+}
+
+.scholarly-file .article-heading {
+  grid-template-columns: .95fr 1.25fr;
+}
+
+.scholarly-file .article-heading h1 {
+  max-width: 9.5ch;
+  font-size: clamp(3rem, 6.2vw, 5.9rem);
+  line-height: .94;
+}
+
+.scholarly-file .scholarly-figure {
+  transform: rotate(.6deg);
+}
+
+.scholarly-file .evidence-figure::after {
+  content: "RF–002";
+}
+
+.scholarly-file .scholarly-paper {
+  width: min(880px, 100%);
+  padding-inline: clamp(1.35rem, 8vw, 7.6rem);
+  background:
+    linear-gradient(90deg, rgba(65,46,19,.065), transparent 9%, transparent 91%, rgba(65,46,19,.065)),
+    repeating-linear-gradient(0deg, transparent 0 35px, rgba(76,55,25,.03) 36px),
+    var(--paper-light);
+}
+
+.scholarly-file .article-paper::before {
+  content: "PSYCHOLOGY & PHILOSOPHY";
+  color: var(--scholar-green);
+  border-color: var(--scholar-green);
+}
+
+.scholarly-file .scholarly-paper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(93,65,27,.07), transparent 18%),
+    radial-gradient(circle at 87% 55%, rgba(93,65,27,.055), transparent 20%);
+  mix-blend-mode: multiply;
+}
+
+.scholarly-file .scholarly-paper > * {
+  position: relative;
+  z-index: 1;
+}
+
+.editorial-note {
+  margin: 1rem 0 4.5rem;
+  padding: 1.6rem 1.75rem 1.45rem;
+  color: #443927;
+  background: rgba(202,184,144,.42);
+  border: 1px solid rgba(58,43,22,.24);
+  border-left: .3rem solid var(--scholar-green);
+  box-shadow: 0 8px 20px rgba(70,49,19,.08);
+}
+
+.editorial-note p:last-child {
+  margin: 0;
+  font: italic 400 .92rem/1.72 var(--serif);
+}
+
+.note-label,
+.session-number,
+.folio-label {
+  margin: 0 0 .8rem;
+  color: var(--scholar-green);
+  font: 700 .64rem/1.35 var(--sans);
+  letter-spacing: .16em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.folio-label { color: var(--scholar-gold); }
+
+.prologue {
+  margin-bottom: 4.75rem;
+}
+
+.prologue > p:not(.folio-label),
+.case-notes > p:not(.note-label),
+.sources li {
+  font: 400 clamp(1rem, 2vw, 1.1rem)/1.82 var(--serif);
+}
+
+.prologue > p:not(.folio-label) {
+  margin-bottom: 1.35rem;
+}
+
+.prologue > p:nth-of-type(2)::first-letter {
+  float: left;
+  margin: .1rem .14rem 0 0;
+  color: var(--scholar-green);
+  font: 600 3.4rem/.78 var(--serif);
+}
+
+.dramatis {
+  margin: 0 0 5rem;
+  padding: 2.25rem 0;
+  border-top: 1px solid rgba(51,38,22,.3);
+  border-bottom: 1px solid rgba(51,38,22,.3);
+}
+
+.dramatis h2 {
+  margin: 0 0 1.6rem;
+  color: var(--scholar-green);
+  font: 400 1.35rem/1.3 var(--type);
+  text-align: center;
+}
+
+.dramatis p {
+  margin: 0 0 1rem;
+  font: 400 1rem/1.7 var(--serif);
+}
+
+.dramatis p:last-child { margin-bottom: 0; }
+
+.case-notes {
+  margin: 4.75rem -2.1rem;
+  padding: 2.5rem 2.1rem 2.3rem;
+  color: #2f291f;
+  background:
+    linear-gradient(100deg, rgba(69,86,72,.095), transparent 55%),
+    rgba(217,205,175,.72);
+  border: 1px solid rgba(47,59,53,.28);
+  box-shadow: 8px 11px 0 rgba(76,57,26,.07);
+  transform: rotate(-.15deg);
+}
+
+.case-notes h2 {
+  margin: 0 0 1.8rem;
+  color: var(--scholar-green);
+  font: 400 clamp(1.55rem, 3vw, 2rem)/1.22 var(--type);
+  text-align: center;
+}
+
+.case-notes p {
+  margin-bottom: 1.25rem;
+}
+
+.case-notes p:last-child { margin-bottom: 0; }
+
+.scholarly-file .act-title {
+  color: var(--scholar-green);
+}
+
+.scholarly-file .act + .act {
+  border-top-color: rgba(43,59,52,.3);
+}
+
+.scholarly-file .speech > p:not(.speaker),
+.scholarly-file .stage-direction {
+  font-family: var(--serif);
+}
+
+.scholarly-file .speaker {
+  color: #32291e;
+}
+
+.stage-inline {
+  margin-bottom: .4rem !important;
+  color: #655a48;
+  font-style: italic !important;
+  text-align: center;
+}
+
+.stage-inline + p {
+  margin-top: .45rem;
+}
+
+.scholarly-file .stage-direction {
+  color: var(--scholar-green);
+  font-size: .88rem;
+  letter-spacing: .12em;
+}
+
+.scholarly-file .stage-direction.quiet {
+  margin-top: 1.15rem;
+  color: #655a48;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.speech blockquote {
+  margin: 1.8rem clamp(.5rem, 5vw, 3rem);
+  padding: 1.2rem 1.4rem;
+  color: #403527;
+  border-left: .22rem solid var(--scholar-gold);
+  background: rgba(199,179,137,.25);
+  font: italic 400 1rem/1.75 var(--serif);
+}
+
+.diagnosis {
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(42,58,50,.3);
+  background: rgba(238,229,207,.68);
+}
+
+.concept-lines {
+  margin: 1.25rem 0 1.7rem;
+  padding: 0;
+  list-style: none;
+}
+
+.concept-lines li {
+  margin: 0 0 .8rem;
+  padding-left: 1.1rem;
+  border-left: 2px solid rgba(42,58,50,.35);
+  font: 400 .96rem/1.65 var(--type);
+}
+
+.parallel {
+  color: #615641;
+  font-style: italic !important;
+  text-align: center;
+}
+
+.sources {
+  margin-top: 5rem;
+  padding-top: 4.75rem;
+  border-top: 1px solid rgba(43,59,52,.3);
+}
+
+.sources ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sources li {
+  margin-bottom: 1.4rem;
+  padding: 0 0 1.25rem 1.15rem;
+  border-bottom: 1px solid rgba(56,43,24,.15);
+}
+
+.closing-direction {
+  margin-top: 5rem !important;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(43,59,52,.3);
+}
+
+@media (max-width: 780px) {
+  .scholarly-file .article-heading { grid-template-columns: 1fr; }
+  .scholarly-file .article-heading h1 { max-width: 11ch; }
+}
+
+@media (max-width: 620px) {
+  .case-notes {
+    margin-inline: -.45rem;
+    padding: 2rem 1.25rem 1.8rem;
+  }
+
+  .scholarly-file .article-heading h1 {
+    font-size: clamp(2.55rem, 13vw, 4rem);
+  }
+
+  .speech blockquote {
+    margin-inline: 0;
+  }
+}
+
+@media print {
+  .scholarly-file { background: #fff; }
+  .scholarly-file .site-header,
+  .scholarly-file .article-heading,
+  .scholarly-file .article-nav,
+  .scholarly-file .site-footer { display: none; }
+  .scholarly-file .article-shell { padding: 0; }
+  .scholarly-file .scholarly-paper { box-shadow: none; }
+}
