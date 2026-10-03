@@ -382,6 +382,35 @@ h2 {
   font: 400 1rem/1.65 Georgia, serif;
 }
 
+.file-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.file-card-link > p {
+  max-width: 48ch;
+  color: #504633;
+  font: 400 1rem/1.65 Georgia, serif;
+}
+
+.file-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  margin: 1.35rem 0 1.45rem;
+  border: 1px solid rgba(46,35,20,.35);
+  object-fit: cover;
+  filter: sepia(.12) contrast(1.04) saturate(.82);
+  box-shadow: 0 9px 18px rgba(44,31,14,.22);
+}
+
+.file-card-published { min-height: 0; }
+
+.file-card-published h3 { margin-top: 0; }
+
+.file-card-published .file-status { color: var(--red); }
+
 .file-status {
   display: inline-block;
   margin-top: 1rem;
