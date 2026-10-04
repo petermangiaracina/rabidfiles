@@ -1,0 +1,16 @@
+.odds-file .article-heading { grid-template-columns: minmax(0, .82fr) minmax(320px, 1.18fr); }
+.odds-file .evidence-figure { transform: rotate(-1deg); }
+.odds-file .evidence-figure::after { content: "RF–007"; }
+.odds-file h1 { font-size: clamp(2.8rem, 5.9vw, 5.5rem); line-height: .96; }
+.odds-paper::before { content: "ODDS & ENDS"; }
+.odds-paper > p { margin-bottom: 1.5rem; font: 400 clamp(1.03rem, 2.2vw, 1.16rem)/1.8 var(--serif); }
+.odds-paper .lede::first-letter { float: left; margin: .14em .12em 0 0; color: var(--red); font: 700 4.2rem/.76 var(--serif); }
+.odds-paper .shock-line { margin: 3rem 0; padding: 1.5rem 0; border-block: 1px solid rgba(51,38,22,.28); color: var(--red); font-size: clamp(1.35rem, 3vw, 1.8rem); font-style: italic; font-weight: 700; line-height: 1.4; text-align: center; }
+.odds-department { padding: 5rem 0 7rem; }
+.odds-department h1 { max-width: none; }
+.odds-department .file-grid { margin-top: 4rem; }
+.file-card .odds-card-image { display: block; width: 100%; aspect-ratio: 3 / 2; margin: 1.5rem auto; object-fit: cover; }
+@media (max-width: 780px) {
+  .odds-file .article-heading { grid-template-columns: 1fr; }
+  .odds-file h1 { font-size: clamp(2.65rem, 13vw, 4.5rem); }
+}
