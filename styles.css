@@ -418,9 +418,10 @@ h2 {
 }
 
 .wig-card .file-card-image {
-  height: 145px;
+  height: 155px;
   margin: .9rem 0 1rem;
   object-fit: cover;
+  object-position: center 28%;
 }
 
 .wig-card h3 {
