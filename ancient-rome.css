@@ -1,0 +1,20 @@
+.rome-file .article-heading { grid-template-columns: minmax(0, 1fr) 220px; }
+.rome-file .evidence-figure { width: 220px; justify-self: center; padding: 2rem 1.25rem 1.25rem; }
+.rome-file .evidence-figure img { width: 133px; height: 209px; aspect-ratio: auto; object-fit: contain; margin-inline: auto; }
+.rome-file .evidence-figure figcaption { flex-direction: column; text-align: center; }
+.rome-file .evidence-figure::after { content: "RF–005"; }
+.rome-paper::before { content: "ANCIENT ROME"; }
+.rome-paper > p, .rome-paper blockquote { font: 400 clamp(1.03rem, 2.2vw, 1.16rem)/1.8 var(--serif); }
+.rome-paper > p { margin-bottom: 1.5rem; }
+.rome-paper .epigraph { margin: 1.5rem 0 3rem; padding: 0 0 2rem; border-bottom: 1px solid rgba(51,38,22,.28); }
+.rome-paper .epigraph p { font-style: italic; margin-bottom: 1rem; }
+.rome-paper .epigraph footer { font: 400 .9rem/1.6 var(--serif); color: #675946; text-align: right; }
+.rome-paper .pullquote { margin: 2.5rem 0; padding: 1.5rem 0; border-block: 1px solid rgba(51,38,22,.28); text-align: center; font-style: italic; font-weight: 700; color: var(--red); }
+.rome-paper .pullquote p { margin: 0; }
+.file-card .rome-card-image { display: block; width: 133px; height: 209px; margin: 1.5rem auto; object-fit: contain; }
+a.drawer { text-decoration: none; }
+a.drawer:focus-visible { outline: 3px solid var(--red-bright); outline-offset: 4px; }
+.rome-department { padding: 5rem 0 7rem; }
+.rome-department h1 { max-width: none; }
+.rome-department .file-grid { margin-top: 4rem; }
+@media (max-width: 780px) { .rome-file .article-heading { grid-template-columns: 1fr; } }
