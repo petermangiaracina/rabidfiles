@@ -1,0 +1,123 @@
+.curmudgeon-file {
+  --paper: #d7c6a3;
+  --paper-light: #eee2c8;
+  --paper-dark: #bea778;
+  --cigar: #80502d;
+  --blue-pencil: #526a73;
+}
+
+.curmudgeon-file .article-heading {
+  grid-template-columns: .92fr 1.18fr;
+}
+
+.curmudgeon-file .article-heading h1 {
+  max-width: 9.5ch;
+  font-size: clamp(3rem, 6.2vw, 6rem);
+}
+
+.curmudgeon-file .article-heading h1 em {
+  color: var(--red-bright);
+  font-style: normal;
+}
+
+.curmudgeon-file .curmudgeon-figure {
+  transform: rotate(-.65deg);
+}
+
+.curmudgeon-file .evidence-figure::after {
+  content: "RF–003";
+}
+
+.curmudgeon-file .curmudgeon-paper {
+  width: min(820px, 100%);
+  padding-inline: clamp(1.4rem, 8vw, 7rem);
+  background:
+    linear-gradient(90deg, rgba(74,43,19,.07), transparent 10%, transparent 91%, rgba(74,43,19,.06)),
+    repeating-linear-gradient(0deg, transparent 0 33px, rgba(91,65,28,.035) 34px),
+    var(--paper-light);
+}
+
+.curmudgeon-file .article-paper::before {
+  content: "CURMUDGEON’S CORNER";
+  color: var(--red);
+  border-color: var(--red);
+  transform: rotate(3deg);
+}
+
+.complaint-slip {
+  margin: .5rem 0 4rem;
+  padding: 1.2rem 1.3rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1.2rem;
+  color: #30291e;
+  border: 1px solid rgba(64,45,22,.32);
+  border-left: .35rem solid var(--red);
+  background: rgba(213,193,153,.48);
+  box-shadow: 6px 7px 0 rgba(77,50,21,.07);
+  transform: rotate(-.25deg);
+}
+
+.complaint-slip span {
+  color: var(--red);
+  font: 700 .63rem/1.2 var(--sans);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.complaint-slip strong {
+  font: 400 .9rem/1.5 var(--type);
+}
+
+.curmudgeon-paper > p:not(.case-closed) {
+  margin-bottom: 1.6rem;
+  font: 400 clamp(1.04rem, 2.15vw, 1.16rem)/1.82 var(--serif);
+}
+
+.curmudgeon-paper .lede::first-letter {
+  float: left;
+  margin: .09rem .12rem 0 0;
+  color: var(--red);
+  font: 400 4.15rem/.77 var(--type);
+}
+
+.curmudgeon-paper p:nth-of-type(3),
+.curmudgeon-paper p:nth-of-type(7) {
+  position: relative;
+}
+
+.curmudgeon-paper p:nth-of-type(3)::before,
+.curmudgeon-paper p:nth-of-type(7)::before {
+  content: "";
+  position: absolute;
+  left: -2.3rem;
+  top: .35rem;
+  width: 1.3rem;
+  height: .45rem;
+  border-top: 2px solid rgba(143,33,28,.55);
+  border-bottom: 2px solid rgba(143,33,28,.35);
+  transform: rotate(-8deg);
+}
+
+.case-closed {
+  margin: 4.8rem auto 0;
+  width: max-content;
+  padding: .85rem 1rem .6rem;
+  color: var(--red);
+  border: 5px double var(--red);
+  font: 700 .82rem/1 var(--type);
+  letter-spacing: .15em;
+  transform: rotate(-2deg);
+  opacity: .82;
+}
+
+@media (max-width: 780px) {
+  .curmudgeon-file .article-heading { grid-template-columns: 1fr; }
+  .curmudgeon-file .article-heading h1 { max-width: 11ch; }
+}
+
+@media (max-width: 620px) {
+  .complaint-slip { grid-template-columns: 1fr; gap: .45rem; }
+  .curmudgeon-paper p::before { display: none; }
+}
