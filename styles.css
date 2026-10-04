@@ -411,6 +411,33 @@ h2 {
 
 .file-card-published .file-status { color: var(--red); }
 
+.wig-card {
+  align-self: start;
+  min-height: 0;
+  padding: 2.8rem 1.25rem 1.5rem;
+}
+
+.wig-card .file-card-image {
+  height: 145px;
+  margin: .9rem 0 1rem;
+  object-fit: cover;
+}
+
+.wig-card h3 {
+  max-width: none;
+  margin: 0 0 .75rem;
+  font-size: clamp(1.12rem, 1.75vw, 1.45rem);
+  line-height: 1.24;
+}
+
+.wig-card .file-card-link > p {
+  margin-bottom: .7rem;
+  font-size: .82rem;
+  line-height: 1.48;
+}
+
+.wig-card .file-status { margin-top: .45rem; }
+
 .file-status {
   display: inline-block;
   margin-top: 1rem;
