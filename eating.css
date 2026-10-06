@@ -1,0 +1,15 @@
+.eating-file .article-heading { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+.eating-file h1 { font-size: clamp(2.8rem, 5.5vw, 5.3rem); line-height: .98; }
+.eating-file .evidence-figure::after { content: "RF–008"; }
+.eating-file .evidence-figure figcaption { flex-wrap: wrap; }
+.eating-file .subtitle a { text-underline-offset: .2em; }
+.eating-paper > p, .eating-paper li, .additional-info p { font: 400 clamp(1.03rem, 2.2vw, 1.16rem)/1.8 var(--serif); }
+.eating-paper > p { margin-bottom: 1.5rem; }
+.banquet-menu { margin: 1.4rem 0 2rem; padding-left: 1.4rem; }
+.banquet-menu li { padding-left: .3rem; margin-bottom: .45rem; }
+.banquet-menu li::marker { color: var(--red); }
+.additional-info { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(51,38,22,.28); }
+.additional-info h2 { margin-bottom: 1.5rem; font: 400 clamp(1.5rem,3vw,2rem)/1.25 var(--type); color: var(--red); }
+.additional-info h3 { margin: 2rem 0 1rem; font: 400 1.25rem/1.4 var(--type); }
+.additional-info p { margin-bottom: 1.5rem; }
+@media (max-width: 780px) { .eating-file .article-heading { grid-template-columns: 1fr; } .eating-file .evidence-figure { width: min(100%,650px); justify-self:center; } }
