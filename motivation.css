@@ -1,0 +1,9 @@
+.motivation-file .evidence-figure img { width: 100%; height: auto; aspect-ratio: 5 / 3; object-fit: cover; object-position: center top; }
+.motivation-file .evidence-figure::after { content: "RF–010"; }
+.motivation-paper::before { content: "PSYCHOLOGY & PHILOSOPHY"; }
+.motivation-paper > p, .motivation-paper blockquote { font: 400 clamp(1.03rem, 2.2vw, 1.16rem)/1.8 var(--serif); }
+.motivation-paper > p { margin-bottom: 1.5rem; }
+.motivation-paper .lede { margin-top: 1.5rem; }
+.motivation-paper blockquote { margin: 2rem 0; padding: 1rem 1.3rem; border-left: 3px solid var(--red); background: rgba(143,33,28,.035); font-style: italic; }
+.motivation-paper blockquote p { margin: 0; }
+.motivation-paper .source-tags { margin-top: 2rem; font-size: .85rem; color: #675946; }
