@@ -11,7 +11,31 @@
 
 .song-file .article-heading h1 { color: #f0eadc; }
 
-.song-file .evidence-figure::after { content: "RF–011"; }
+.virgin-spring-file .evidence-figure::after { content: "RF–011"; }
+
+.priestess-file {
+  background:
+    radial-gradient(circle at 74% 16%, rgba(132, 29, 35, .16), transparent 25rem),
+    radial-gradient(circle at 48% 72%, rgba(165, 170, 178, .08), transparent 32rem),
+    repeating-radial-gradient(circle at 50% 44%, transparent 0 5.7rem, rgba(184, 155, 116, .025) 5.75rem 5.82rem),
+    repeating-linear-gradient(8deg, transparent 0 3px, rgba(255,255,255,.008) 4px, transparent 5px),
+    #0b0a0b;
+}
+
+.priestess-file .evidence-figure::after { content: "RF–012"; }
+
+.priestess-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 9%, rgba(125, 25, 31, .12), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 12%, transparent 88%, rgba(0,0,0,.22)),
+    linear-gradient(155deg, #201718, #120f12 52%, #181317);
+  border-color: rgba(154, 117, 110, .25);
+}
+
+.lyrics-refrain {
+  color: #e8d6d1;
+  text-shadow: 0 1px 0 #000;
+}
 
 .lyrics-paper {
   width: min(760px, 100%);
