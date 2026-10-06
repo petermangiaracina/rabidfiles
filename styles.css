@@ -570,7 +570,7 @@ footer p { margin: 0; }
 /* Compact, consistently sized cards on the archive home page. */
 .archive-home .file-grid { gap: 2rem; }
 .archive-home .file-card {
-  height: 530px;
+  height: 460px;
   min-height: 0;
   padding: 2rem 1.35rem 1.25rem;
   display: flex;
@@ -629,6 +629,9 @@ footer p { margin: 0; }
   transform: rotate(-5deg);
 }
 .archive-home .file-card-no-image strong { font-size: 1.35rem; font-weight: 400; }
+@media (max-width: 1000px) {
+  .archive-home .file-card { height: 530px; }
+}
 @media (max-width: 680px) {
   .archive-home .file-card { height: 550px; }
 }
