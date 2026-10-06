@@ -642,8 +642,8 @@ footer p { margin: 0; }
 .archive-home img[src*="strindberg"] { object-position: center top; }
 .archive-home img[src*="thank-you-for-not-smoking"] { object-position: center top; }
 .archive-home .file-card .rome-card-image {
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center;
   border: 0;
 }
 @media (max-width: 680px) {
