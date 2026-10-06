@@ -32,6 +32,30 @@
   border-color: rgba(154, 117, 110, .25);
 }
 
+.snail-fork-file {
+  background:
+    radial-gradient(circle at 72% 15%, rgba(170, 108, 68, .14), transparent 26rem),
+    radial-gradient(circle at 24% 76%, rgba(170, 129, 119, .08), transparent 30rem),
+    repeating-linear-gradient(88deg, transparent 0 5px, rgba(255,255,255,.007) 6px, transparent 7px),
+    #100d0b;
+}
+
+.snail-fork-file .evidence-figure::after { content: "RF–013"; }
+
+.snail-fork-file .lyrics-paper {
+  background:
+    radial-gradient(ellipse at 52% 12%, rgba(206, 161, 132, .075), transparent 19rem),
+    linear-gradient(90deg, rgba(255,255,255,.025), transparent 11%, transparent 89%, rgba(0,0,0,.2)),
+    linear-gradient(155deg, #28201b, #171310 52%, #211813);
+  border-color: rgba(193, 151, 120, .28);
+}
+
+.snail-fork-file .lyrics-refrain {
+  color: #e8c7bd;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(169, 76, 69, .55);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
