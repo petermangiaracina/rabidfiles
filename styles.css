@@ -566,3 +566,69 @@ footer p { margin: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+/* Compact, consistently sized cards on the archive home page. */
+.archive-home .file-grid { gap: 2rem; }
+.archive-home .file-card {
+  height: 530px;
+  min-height: 0;
+  padding: 2rem 1.35rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+.archive-home .file-meta { padding-bottom: .75rem; flex-shrink: 0; }
+.archive-home .file-card-link {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.archive-home .file-card-image,
+.archive-home .file-card .rome-card-image,
+.archive-home .file-card-no-image {
+  width: 100%;
+  height: 190px;
+  min-height: 190px;
+  max-height: 190px;
+  aspect-ratio: auto;
+  margin: .9rem 0 1rem;
+  flex-shrink: 0;
+}
+.archive-home .file-card-image { object-fit: cover; }
+.archive-home .file-card .rome-card-image { object-fit: contain; }
+.archive-home .file-card h3 {
+  max-width: none;
+  margin: 0 0 .65rem;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+.archive-home .file-card-link > p {
+  margin: 0 0 .55rem;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+.archive-home .file-status { margin-top: auto; align-self: flex-start; }
+.archive-home .file-card-no-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(46,35,20,.35);
+  background: #c7b793;
+  text-align: center;
+  font-family: var(--type);
+}
+.archive-home .file-card-no-image span {
+  color: var(--red);
+  border: 3px double currentColor;
+  padding: .5rem .7rem .35rem;
+  font-size: .8rem;
+  transform: rotate(-5deg);
+}
+.archive-home .file-card-no-image strong { font-size: 1.35rem; font-weight: 400; }
+@media (max-width: 680px) {
+  .archive-home .file-card { height: 550px; }
+}
