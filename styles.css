@@ -595,7 +595,7 @@ footer p { margin: 0; }
   margin: .9rem 0 1rem;
   flex-shrink: 0;
 }
-.archive-home .file-card-image { object-fit: cover; }
+.archive-home .file-card-image { object-fit: contain; object-position: center; background: rgba(46,35,20,.06); }
 .archive-home .file-card .rome-card-image { object-fit: contain; }
 .archive-home .file-card h3 {
   max-width: none;
