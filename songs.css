@@ -146,6 +146,30 @@
   border-left: 2px solid rgba(155, 69, 76, .55);
 }
 
+.crazy-people-file {
+  background:
+    radial-gradient(circle at 72% 14%, rgba(153, 118, 52, .13), transparent 25rem),
+    radial-gradient(circle at 27% 75%, rgba(112, 31, 35, .1), transparent 31rem),
+    repeating-radial-gradient(circle at 54% 62%, transparent 0 5.8rem, rgba(177, 163, 131, .018) 5.9rem 6rem),
+    #0c0c0b;
+}
+
+.crazy-people-file .evidence-figure::after { content: "RF–018"; }
+
+.crazy-people-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(164, 126, 59, .085), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.018), transparent 10%, transparent 90%, rgba(0,0,0,.26)),
+    linear-gradient(155deg, #24221c, #121313 52%, #1b1815);
+  border-color: rgba(161, 143, 103, .27);
+}
+
+.crazy-people-file .lyrics-refrain {
+  color: #ded3bd;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(164, 125, 58, .55);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
