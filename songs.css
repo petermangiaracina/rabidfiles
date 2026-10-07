@@ -185,7 +185,14 @@
   line-height: .98;
 }
 
-.songs-department .file-grid { max-width: 580px; }
+.songs-department .file-grid {
+  width: 100%;
+  max-width: none;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.songs-department .file-card { height: 570px; }
 
 .archive-home .song-card { padding-top: 3.45rem; }
 
@@ -193,6 +200,22 @@
   max-width: calc(100% - 2.7rem);
   font-size: .56rem;
   line-height: 1.3;
+}
+
+@media (max-width: 1040px) {
+  .songs-department .file-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 780px) {
+  .songs-department .file-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .songs-department .file-card { height: 610px; }
+}
+
+@media (max-width: 540px) {
+  .songs-department .file-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
