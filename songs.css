@@ -170,6 +170,30 @@
   border-left: 2px solid rgba(164, 125, 58, .55);
 }
 
+.coming-for-me-file {
+  background:
+    radial-gradient(circle at 71% 15%, rgba(100, 119, 91, .13), transparent 25rem),
+    radial-gradient(circle at 24% 74%, rgba(127, 39, 40, .11), transparent 31rem),
+    repeating-linear-gradient(88deg, transparent 0 4.8rem, rgba(194, 205, 190, .014) 4.9rem 5.05rem),
+    #0b0d0b;
+}
+
+.coming-for-me-file .evidence-figure::after { content: "RF–019"; }
+
+.coming-for-me-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(109, 132, 96, .09), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.018), transparent 10%, transparent 90%, rgba(0,0,0,.28)),
+    linear-gradient(155deg, #1c211b, #101311 52%, #191714);
+  border-color: rgba(135, 151, 127, .27);
+}
+
+.coming-for-me-file .lyrics-refrain {
+  color: #d9ded4;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(153, 61, 60, .58);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
