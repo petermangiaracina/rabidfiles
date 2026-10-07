@@ -329,6 +329,16 @@ h1 {
 
 .footer-mark { color: var(--chalk); font: 400 1.1rem/1 var(--type); text-decoration: none; text-transform: none; }
 
+.ai-writing-note {
+  grid-column: 1 / -1;
+  max-width: 76ch;
+  color: var(--muted);
+  font: 400 .58rem/1.65 var(--sans);
+  letter-spacing: .035em;
+  text-transform: none;
+  opacity: .62;
+}
+
 @media (max-width: 780px) {
   .article-heading { grid-template-columns: 1fr; }
   .evidence-figure { width: min(100%, 650px); }
