@@ -194,6 +194,30 @@
   border-left: 2px solid rgba(153, 61, 60, .58);
 }
 
+.vacuous-thing-file {
+  background:
+    radial-gradient(circle at 70% 14%, rgba(174, 123, 134, .14), transparent 25rem),
+    radial-gradient(circle at 25% 75%, rgba(76, 111, 119, .11), transparent 31rem),
+    repeating-linear-gradient(92deg, transparent 0 5.1rem, rgba(227, 211, 192, .014) 5.2rem 5.35rem),
+    #100d0f;
+}
+
+.vacuous-thing-file .evidence-figure::after { content: "RF–020"; }
+
+.vacuous-thing-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(171, 112, 124, .1), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.022), transparent 10%, transparent 90%, rgba(0,0,0,.25)),
+    linear-gradient(155deg, #2a2024, #151215 52%, #1d1a1b);
+  border-color: rgba(182, 145, 151, .28);
+}
+
+.vacuous-thing-file .lyrics-refrain {
+  color: #ead8da;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(184, 111, 124, .58);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
