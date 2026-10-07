@@ -122,6 +122,30 @@
   border-left: 2px solid rgba(157, 112, 70, .55);
 }
 
+.read-my-lips-file {
+  background:
+    radial-gradient(circle at 69% 16%, rgba(139, 32, 42, .12), transparent 24rem),
+    radial-gradient(circle at 24% 73%, rgba(91, 108, 123, .12), transparent 31rem),
+    repeating-linear-gradient(94deg, transparent 0 5.4rem, rgba(202, 210, 215, .012) 5.5rem 5.65rem),
+    #0b0e11;
+}
+
+.read-my-lips-file .evidence-figure::after { content: "RF–017"; }
+
+.read-my-lips-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(135, 42, 51, .09), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 10%, transparent 90%, rgba(0,0,0,.24)),
+    linear-gradient(155deg, #1d2227, #101417 52%, #18191c);
+  border-color: rgba(145, 156, 165, .27);
+}
+
+.read-my-lips-file .lyrics-refrain {
+  color: #ded5d4;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(155, 69, 76, .55);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
