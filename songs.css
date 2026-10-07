@@ -56,6 +56,24 @@
   border-left: 2px solid rgba(169, 76, 69, .55);
 }
 
+.geranium-file {
+  background:
+    radial-gradient(circle at 69% 15%, rgba(173, 31, 34, .17), transparent 23rem),
+    radial-gradient(circle at 25% 72%, rgba(113, 105, 72, .1), transparent 31rem),
+    repeating-linear-gradient(90deg, transparent 0 6px, rgba(219, 188, 130, .008) 7px, transparent 8px),
+    #0e0d09;
+}
+
+.geranium-file .evidence-figure::after { content: "RF–014"; }
+
+.geranium-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(177, 31, 37, .11), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.022), transparent 10%, transparent 90%, rgba(0,0,0,.22)),
+    linear-gradient(155deg, #20231a, #12140f 52%, #19170f);
+  border-color: rgba(173, 156, 104, .27);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
