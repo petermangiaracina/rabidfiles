@@ -98,6 +98,30 @@
   border-left: 2px solid rgba(132, 157, 71, .52);
 }
 
+.king-ideus-file {
+  background:
+    radial-gradient(circle at 70% 16%, rgba(157, 119, 63, .14), transparent 25rem),
+    radial-gradient(circle at 23% 72%, rgba(70, 91, 112, .12), transparent 32rem),
+    repeating-linear-gradient(92deg, transparent 0 5.5rem, rgba(202, 184, 148, .012) 5.6rem 5.75rem),
+    #0b0d0f;
+}
+
+.king-ideus-file .evidence-figure::after { content: "RF–016"; }
+
+.king-ideus-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 11%, rgba(138, 93, 53, .095), transparent 19rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 10%, transparent 90%, rgba(0,0,0,.24)),
+    linear-gradient(155deg, #21201d, #111416 52%, #191716);
+  border-color: rgba(165, 143, 108, .27);
+}
+
+.king-ideus-file .lyrics-refrain {
+  color: #dfd1bc;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(157, 112, 70, .55);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
