@@ -266,6 +266,30 @@
   border-left: 2px solid rgba(170, 112, 63, .6);
 }
 
+.gift-of-gab-file {
+  background:
+    radial-gradient(circle at 70% 14%, rgba(134, 74, 55, .15), transparent 25rem),
+    radial-gradient(circle at 24% 76%, rgba(109, 111, 72, .11), transparent 31rem),
+    repeating-linear-gradient(92deg, transparent 0 5rem, rgba(222, 201, 164, .014) 5.1rem 5.25rem),
+    #100d0b;
+}
+
+.gift-of-gab-file .evidence-figure::after { content: "RF–023"; }
+
+.gift-of-gab-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(147, 72, 55, .1), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 10%, transparent 90%, rgba(0,0,0,.27)),
+    linear-gradient(155deg, #281f1b, #15110f 52%, #1d1914);
+  border-color: rgba(170, 126, 98, .28);
+}
+
+.gift-of-gab-file .lyrics-refrain {
+  color: #ebd8ce;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(183, 68, 55, .62);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
