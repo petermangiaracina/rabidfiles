@@ -242,6 +242,30 @@
   border-left: 2px solid rgba(157, 119, 150, .6);
 }
 
+.desperate-angel-file {
+  background:
+    radial-gradient(circle at 71% 14%, rgba(111, 121, 124, .14), transparent 25rem),
+    radial-gradient(circle at 23% 77%, rgba(143, 92, 46, .12), transparent 31rem),
+    repeating-linear-gradient(89deg, transparent 0 5rem, rgba(211, 193, 162, .014) 5.1rem 5.25rem),
+    #0d0d0c;
+}
+
+.desperate-angel-file .evidence-figure::after { content: "RF–022"; }
+
+.desperate-angel-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(151, 111, 65, .1), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 10%, transparent 90%, rgba(0,0,0,.28)),
+    linear-gradient(155deg, #24211c, #131310 52%, #1b1916);
+  border-color: rgba(157, 139, 107, .28);
+}
+
+.desperate-angel-file .lyrics-refrain {
+  color: #e4ddd0;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(170, 112, 63, .6);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
