@@ -290,6 +290,45 @@
   border-left: 2px solid rgba(183, 68, 55, .62);
 }
 
+.times-heal-wounded-file {
+  background:
+    radial-gradient(circle at 71% 14%, rgba(71, 91, 124, .16), transparent 25rem),
+    radial-gradient(circle at 24% 76%, rgba(165, 83, 47, .11), transparent 31rem),
+    repeating-radial-gradient(circle at 61% 66%, transparent 0 5rem, rgba(190, 199, 214, .014) 5.1rem 5.25rem),
+    #090c11;
+}
+
+.times-heal-wounded-file .evidence-figure::after { content: "RF–024"; }
+
+.times-heal-wounded-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 9%, rgba(75, 92, 126, .11), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 10%, transparent 90%, rgba(0,0,0,.28)),
+    linear-gradient(155deg, #1b2029, #0e1117 52%, #1b1715);
+  border-color: rgba(126, 143, 170, .28);
+}
+
+.times-heal-wounded-file .lyrics-refrain {
+  color: #dce1ea;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(173, 91, 56, .62);
+}
+
+.song-origin {
+  margin: 0 0 3rem;
+  color: #aeb8c7;
+  font: 600 .78rem/1.6 "Libre Franklin", Arial, sans-serif;
+  letter-spacing: .045em;
+}
+
+.lyrics-section-label {
+  margin: 0 0 .65rem;
+  color: #bd7770;
+  font: 800 .64rem/1.4 "Libre Franklin", Arial, sans-serif;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;

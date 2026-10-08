@@ -350,6 +350,7 @@ h1 {
   .site-header, .article-shell, .site-footer { width: min(100% - 1.5rem, 1120px); }
   .article-shell { padding-top: 3rem; }
   h1 { font-size: clamp(2.8rem, 15vw, 4.5rem); }
+  .evidence-figure::after { right: .1rem; }
   .article-paper::before { position: relative; display: inline-block; inset: auto; margin: 0 0 2.5rem; }
   .characters { margin-top: 0; }
   .article-nav { flex-direction: column; }
