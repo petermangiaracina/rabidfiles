@@ -314,6 +314,30 @@
   border-left: 2px solid rgba(173, 91, 56, .62);
 }
 
+.pay-the-price-file {
+  background:
+    radial-gradient(circle at 70% 14%, rgba(49, 74, 151, .17), transparent 25rem),
+    radial-gradient(circle at 24% 76%, rgba(142, 63, 43, .12), transparent 31rem),
+    repeating-linear-gradient(91deg, transparent 0 5rem, rgba(213, 184, 131, .014) 5.1rem 5.25rem),
+    #100d0c;
+}
+
+.pay-the-price-file .evidence-figure::after { content: "RF–025"; }
+
+.pay-the-price-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 9%, rgba(48, 72, 148, .12), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 10%, transparent 90%, rgba(0,0,0,.28)),
+    linear-gradient(155deg, #211d22, #111014 52%, #1e1713);
+  border-color: rgba(144, 130, 161, .29);
+}
+
+.pay-the-price-file .lyrics-refrain {
+  color: #dedcf0;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(62, 91, 177, .68);
+}
+
 .song-origin {
   margin: 0 0 3rem;
   color: #aeb8c7;
