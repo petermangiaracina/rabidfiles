@@ -218,6 +218,30 @@
   border-left: 2px solid rgba(184, 111, 124, .58);
 }
 
+.pursued-by-furies-file {
+  background:
+    radial-gradient(circle at 70% 14%, rgba(98, 83, 123, .15), transparent 25rem),
+    radial-gradient(circle at 24% 76%, rgba(143, 93, 51, .11), transparent 31rem),
+    repeating-linear-gradient(91deg, transparent 0 5rem, rgba(213, 196, 168, .014) 5.1rem 5.25rem),
+    #0d0c0e;
+}
+
+.pursued-by-furies-file .evidence-figure::after { content: "RF–021"; }
+
+.pursued-by-furies-file .lyrics-paper {
+  background:
+    radial-gradient(circle at 50% 9%, rgba(101, 82, 127, .11), transparent 18rem),
+    linear-gradient(90deg, rgba(255,255,255,.02), transparent 10%, transparent 90%, rgba(0,0,0,.27)),
+    linear-gradient(155deg, #211d25, #121114 52%, #1c1816);
+  border-color: rgba(151, 131, 170, .28);
+}
+
+.pursued-by-furies-file .lyrics-refrain {
+  color: #e3d9e8;
+  padding-left: 1.15rem;
+  border-left: 2px solid rgba(157, 119, 150, .6);
+}
+
 .lyrics-refrain {
   color: #e8d6d1;
   text-shadow: 0 1px 0 #000;
